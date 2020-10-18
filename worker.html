@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+	<script src="as.js"></script>
+	<style>
+	body {
+  background-image: url("6.jpg");
+  background-color: Red;
+  height: 500px;
+  background-position: 1008*67;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+	</style>
+   
+</head>
+<body>
+	<h2>About Hospital</h2>
+	<my-directive> </my-directive>
+	<div " ng-controller="TotCtrl">
+    <h3 text-align="centre">Hospital workers details</h1>
+	Total no of workers:
+  <h2>Total Workers : {{tot}}</h2>
+  
+</div>
+
+
+<div  ng-controller="wrkCtrl">
+  <h2>Total Number of Nurse and Compounders : {{tot}}</h2>
+</div>
+
+
+<div ng-app="myApp">
+<h2>Other Branches in Madurai.</h2>
+    <div ng-controller="parentController">
+      	Hospital Name: {{controllerName}}<br/>
+        City: {{ct}}<br/>
+      	Contact_no: {{c_no}}<br/><br><br>
+      	<div ng-controller="childController">
+      		Hospital Name: {{controllerName}}<br>
+        	City: {{ct}}<br/>
+          	Contact_no: {{c_no}}<br/>
+    	</div>
+    </div>
+ </div>
+
+
+
+
+</body>
+
+
+
+
+</html>
+
+
+
+
+
+</body>
+
+
+
+
+</html>

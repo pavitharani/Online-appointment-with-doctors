@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+	<script src="app.js"></script>
+	
+
+	<style>
+		body {
+  background-image: url("1.jpg");
+  background-color: Red;
+  height: 500px;
+  background-position: 1008*67;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+	
+        div{
+            width:700px;
+        }
+        ul {
+            padding:0;
+            margin:2px 5px; 
+            list-style:none; 
+            border:0; 
+            float:left; 
+            width:100%;
+        }
+        li {
+            width:50%; 
+            float:left; 
+            display:inline-block; 
+        }
+        table, input {
+            text-align:left;
+        }
+        table, td, th 
+        {
+            margin:10px 0;
+            padding:2px 10px;
+			text-align: center;
+        }
+        td, th {
+            
+			text-align: center;
+        }
+        button {
+            padding:3px 5px;
+        }
+
+    </style>
+</head>
+<body >
+    <div ng-app="myApp" ng-controller="myController">
+	<h7>Get your appoinment for {{today|date }} here!!</h7><br><br>
+        <ul>
+            <li>Patient Name</li>
+            <li><input type="text" ng-keypress="kp1=kp1+1" ng-model="name" />  {{kp1}} words entered....</li>
+        </ul>
+        <ul>
+            <li>Age</li>
+            <li><input type="text" ng-model="age" /></li>
+        </ul><br>
+		
+		<label>Are you sure, you want to get an appoinment : 
+		
+		<input type="checkbox"
+		ng-model="checked"></label></br>
+			
+		
+		
+        <ul>
+            <li> </li><li><button ng-disabled="!checked" ng-click="addRow()"> Add Appoinment </button></li>
+        </ul>
+	`	<br><br><h8>List of Appoinment for {{today|date}}</h8>
+	<br>
+        <!--CREATE A TABLE-->
+        <table> 
+            <tr>
+                <th>Code</th>
+                    <th>Patient Name</th>
+                        <th>Age</th>
+            </tr>
+
+            <tr ng-repeat="pat in mArray">
+                <td><label>{{$index + 1}}</label></td>
+                <td><label>{{pat.name}}</label></td>
+                <td><label>{{pat.age}}</label></td>
+                <td><input type="checkbox" ng-model="movies.Remove"/></td>
+            </tr>
+        </table>
+
+        <div>
+            <button ng-click="submit()">Submit Data</button>   
+                <button ng-dblclic="removeRow()">Remove Row</button>
+        </div>
+
+        <div id="display" style="padding:10px 0;">{{display}}</div>
+    </div>
+</body>
+
+
+</html>
