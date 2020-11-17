@@ -1,0 +1,65 @@
+<html>
+<head>
+<style>
+body {
+  background-image: url("1.jpg");
+  background-color: Red;
+  height: 500px;
+  background-position: 1008*67;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+</style>
+
+
+</head>
+<body>
+<h1 style="text-align:center;">Hospital management system</h1>
+<div>
+                          <h3>List of patients</h3>
+                          <ul id ="p1"></ul>
+                          <ul id ="p2"></ul>
+                          <ul id ="p3"></ul>
+                          <ul id ="p4"></ul>
+                          <ul id ="p5"></ul>
+                        </div>
+						
+<h2 id="demo"></h2>
+                  <h4 id="demo1"></h4>
+					
+
+<script>
+    var text = '{"hospitalpatient":['+
+   '{"name": "Pavi","Age": "20","Blood_Group": "A-VE","phone": "964374376"},'+
+   '{"name": "Thara","Age": "33","Blood_Group": "AB+","phone": "956674390"},'+
+   '{"name": "Hema","Age": "23","Blood_Group": "A+","phone": "884374366"},'+
+   '{"name": "Dharshini","Age": "56","Blood_Group": "B+","phone": "634374389" }]}';
+
+  var obj = JSON.parse(text);
+   document.getElementById("p1").innerHTML =  "<li>" + obj.hospitalpatient[0].name + " - " +  obj.hospitalpatient[0].Blood_Group + "</li>" ;
+    document.getElementById("p2").innerHTML =  "<li>" + obj.hospitalpatient[1].name + " - " +  obj.hospitalpatient[1].Blood_Group + "</li>" ;
+     document.getElementById("p3").innerHTML =  "<li>" + obj.hospitalpatient[2].name + " - " +  obj.hospitalpatient[2].Blood_Group + "</li>" ;
+      document.getElementById("p4").innerHTML =  "<li>" + obj.hospitalpatient[3].name + " - " +  obj.hospitalpatient[3].Blood_Group + "</li>" ;
+
+</script>
+
+<script>
+var parser, xmlDoc;
+var text = "<places><price>" +
+"<title>Contact the hospital</title>" +
+"<contact>Email : xyzhospital.com</contact>" +
+"</price></places>";
+
+parser = new DOMParser();
+xmlDoc = parser.parseFromString(text,"text/xml");
+
+document.getElementById("demo").innerHTML =
+xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+document.getElementById("demo1").innerHTML =
+xmlDoc.getElementsByTagName("contact")[0].childNodes[0].nodeValue;
+</script>
+
+</body>
+</html>
