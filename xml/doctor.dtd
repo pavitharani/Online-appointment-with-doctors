@@ -1,0 +1,21 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT Doctor (s)+>
+<!ATTLIST Doctor
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT s (name,qual,phone)>
+<!ATTLIST s
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT qual (#PCDATA)>
+<!ATTLIST qual
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT phone (#PCDATA)>
+<!ATTLIST phone
+  xmlns CDATA #FIXED ''>

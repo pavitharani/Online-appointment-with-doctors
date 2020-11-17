@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/xsl" href="doctor.xsl"?> 
+ <Doctor> 
+  <s> 
+  		 <name>Pavithra</name> 
+  		 <qual>MBBS</qual>
+  		 <phone>864644649</phone > 
+ 	 </s> 
+ 	 <s> 
+  		 <name>Manjula</name> 
+ 		  <qual>MBBS Md</qual>
+   <phone>956674345</phone > 
+  </s> 
+ 	 <s> 
+   		<name>John</name> 
+  		 <qual>MBBS MS</qual>
+ 		  <phone>884374566</phone > 
+ 	 </s>
+ 	 <s> 
+  		 <name>Pavitharani</name> 
+  		 <qual>MBBS</qual>
+  		 <phone>634374384</phone > 
+ 	 </s>   
+ </Doctor>

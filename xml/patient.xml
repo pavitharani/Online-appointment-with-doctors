@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/xsl" href="patient.xsl"?>
+ <patient> 
+         <s> 
+            <name>Pavi</name> 
+              	 <Age>20</Age>
+               	<Blood_Group>A-ve</Blood_Group>
+            		 <phone>964374376</phone > 
+  	</s> 
+  <s> 
+  		 <name>Thara</name> 
+  		 <Age>33</Age>
+ 		  <Blood_Group>AB+</Blood_Group>
+   <phone>956674390</phone > 
+ 	 </s> 
+ 	 <s> 
+   		<name>Hema</name> 
+  		 <Age>23</Age>
+ 		  <Blood_Group>A+</Blood_Group>
+ 		  <phone>884374366</phone > 
+ 	 </s>
+ 	 <s> 
+ 		  <name>Dharshini</name> 
+  		 <Age>56</Age>
+  		 <Blood_Group>B+</Blood_Group>
+  		 <phone>634374389</phone > 
+ 	 </s>   
+ </patient>

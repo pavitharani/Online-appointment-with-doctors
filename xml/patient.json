@@ -1,0 +1,26 @@
+[
+   {
+      "name": "Pavi",
+      "Age": "20",
+      "Blood_Group": "A-ve",
+      "phone": "964374376"
+   },
+   {
+      "name": "Thara",
+      "Age": "33",
+      "Blood_Group": "AB+",
+      "phone": "956674390"
+   },
+   {
+      "name": "Hema",
+      "Age": "23",
+      "Blood_Group": "A+",
+      "phone": "884374366"
+   },
+   {
+      "name": "Dharshini",
+      "Age": "56",
+      "Blood_Group": "B+",
+      "phone": "634374389"
+   }
+]

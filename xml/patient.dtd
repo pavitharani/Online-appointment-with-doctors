@@ -1,0 +1,25 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT patient (s)+>
+<!ATTLIST patient
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT s (name,Age,Blood_Group,phone)>
+<!ATTLIST s
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Age (#PCDATA)>
+<!ATTLIST Age
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Blood_Group (#PCDATA)>
+<!ATTLIST Blood_Group
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT phone (#PCDATA)>
+<!ATTLIST phone
+  xmlns CDATA #FIXED ''>
