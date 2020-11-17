@@ -172,6 +172,22 @@
   
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script>
+    var text = '{"hospitalpatient":['+
+   '{"name": "pavi","Age": "20","Blood_Group": "A-VE","phone": "964374376"},'+
+   '{"name": "thara","Age": "33","Blood_Group": "AB+","phone": "956674390"},'+
+   '{"name": "hema","Age": "23","Blood_Group": "A+","phone": "884374366"},'+
+   '{"name": "dharsinih","Age": "56","Blood_Group": "B+","phone": "634374389" }]}';
+
+  var obj = JSON.parse(text);
+   document.getElementById("p1").innerHTML =  "<li>" + obj.hospitalpatient[0].name + " - " +  obj.hospitalpatient[0].Blood_Group + "</li>" ;
+    document.getElementById("p2").innerHTML =  "<li>" + obj.hospitalpatient[1].name + " - " +  obj.hospitalpatient[1].Blood_Group + "</li>" ;
+     document.getElementById("p3").innerHTML =  "<li>" + obj.hospitalpatient[2].name + " - " +  obj.hospitalpatient[2].Blood_Group + "</li>" ;
+      document.getElementById("p4").innerHTML =  "<li>" + obj.hospitalpatient[3].name + " - " +  obj.hospitalpatient[3].Blood_Group + "</li>" ;
+
+</script>
+
 
 </body>
 
